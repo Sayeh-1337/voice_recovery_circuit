@@ -31,3 +31,4 @@ snark-verifier-sdk = { git = "https://github.com/zkemail/snark-verifier.git", ve
     "loader_halo2",
     "halo2-pse",
 ] }
+clap = { version = "4.2.0", features = ["derive"] }
