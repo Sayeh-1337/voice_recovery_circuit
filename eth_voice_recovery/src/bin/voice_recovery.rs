@@ -32,7 +32,7 @@ enum Commands {
         )]
         app_circuit_config: String,
         #[arg(
-            short,
+            short('g'),
             long,
             default_value = "./eth_voice_recovery/configs/agg_circuit.config"
         )]
@@ -56,7 +56,7 @@ enum Commands {
         )]
         app_circuit_config: String,
         #[arg(
-            short,
+            short('g'),
             long,
             default_value = "./eth_voice_recovery/configs/agg_circuit.config"
         )]
@@ -86,7 +86,7 @@ enum Commands {
         )]
         app_circuit_config: String,
         #[arg(
-            short,
+            short('g'),
             long,
             default_value = "./eth_voice_recovery/configs/agg_circuit.config"
         )]
@@ -116,7 +116,7 @@ enum Commands {
         )]
         app_circuit_config: String,
         #[arg(
-            short,
+            short('g'),
             long,
             default_value = "./eth_voice_recovery/configs/agg_circuit.config"
         )]
@@ -143,7 +143,7 @@ enum Commands {
         )]
         app_circuit_config: String,
         #[arg(
-            short,
+            short('g'),
             long,
             default_value = "./eth_voice_recovery/configs/agg_circuit.config"
         )]
