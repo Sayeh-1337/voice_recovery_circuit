@@ -9,6 +9,7 @@ async function main() {
   const voiceKeyRecover = await ethers.getContractFactory('VoiceKeyRecover');
   // await voiceKeyRecover.deploy(dummyVerifierAddress, ensDeployer.address, 32, 64);
   const vk = await voiceKeyRecover.deploy(64);
+  await vk.deployed();
   console.log('VoiceKeyRecover deployed to:', vk.address);
 
 }

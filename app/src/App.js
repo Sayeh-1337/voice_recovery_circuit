@@ -91,8 +91,9 @@ function App() {
             signer
           );
           console.log(VoiceKeyRecovery.abi);
+          const code = await provider.getCode(contractAddress);
           await checkRegistered(vk, sender);
-
+          
           setVk(vk);
           console.log("initialized!");
           setIsRecording(false);

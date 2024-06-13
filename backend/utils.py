@@ -41,7 +41,7 @@ def bch_error_correction(packet):
     data, ecc = packet[:-bch.ecc_bytes], packet[-bch.ecc_bytes:]
 
     # correct
-    bitflips = bch.decode_inplace(data, ecc)
+    bitflips = bch.decode(data, ecc)
 
     # packetize
     packet = data + ecc
