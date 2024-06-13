@@ -15,7 +15,7 @@ from convert import bytearray_to_hex, hex_to_bytearray, feat_bytearray_from_wav_
 # create a bch object
 BCH_POLYNOMIAL = 8219
 BCH_BITS = 64  # 誤り訂正可能なビット数
-bch = bchlib.BCH(BCH_POLYNOMIAL, BCH_BITS)
+bch = bchlib.BCH(BCH_BITS, BCH_POLYNOMIAL)
 CODE_LEN = 140
 
 
